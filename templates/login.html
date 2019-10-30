@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<head>
+    <style>
+        body{
+            background-image: url({% static "images/bg3.jpg" %}) ;
+            margin-top: 150px;
+            text-align: center;
+            line-height: 30px;
+        }
+    </style>
+    <title></title>
+</head>
+<body>
+<h1>Login Here</h1>
+<form action="login" method="POST">
+    {% csrf_token %}
+<input type="text" name="t1" size="25" placeholder="User Name" autofocus required><br>
+<input type="password" name="t2" size="25" placeholder="Password" required><br>
+    <input type="submit" value="submit">
+</form>
+</body>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+
+<head>
+    <link rel="stylesheet" type="text/html">
+    <style>
+        body{
+         background-image: url({% static "images/bg6.jpg" %});
+        }
+        img{
+            width: 500px ;
+            height: 500px;
+            margin-left: 350px;
+            margin-top: 35px;
+
+        }
+        h1{
+            margin-left: 400px;
+            color: red;
+        }
+        p{
+            margin-left: 550px;
+        }
+    </style>
+</head>
+<body>
+<form action="praveen" >
+<img src={% static "images/ga.jpg" %}><br>
+    <h1>Ganapathi,Miriyam</h1>
+<p><input type="submit" value="Back"></p>
+</form>
+</body>
+</html>

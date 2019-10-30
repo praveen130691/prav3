@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<head>
+    <link rel="stylesheet" type="text/html">
+    <style>
+        body{
+            background-image: url({% static "images/bg2.jpg" %});
+        }
+        img{
+            margin-top: 40px;
+            width: 500px ;
+            height: 500px;
+            margin-left: 350px;
+        }
+        h1{
+            margin-left: 400px;
+        }
+        p{
+            margin-left: 550px;
+        }
+    </style>
+    <title></title>
+</head>
+<body>
+<form action="gra1" >
+    <img src={% static "images/sg1.jpg" %} alt="image"><br>
+    <h1>Madhunaiah,Venkatamma</h1>
+<p><input type="submit" value="Back"></p>
+</form>
+</body>
